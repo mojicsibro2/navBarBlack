@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.head{
+    display: flex;
+    background: black;  
+    color: white;
+}
+.head p{
+    margin-top: 16px;
+    margin-left: 28px;
+    color: red;
+}
+.head ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.head ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5px;
+    font-size: 10px;
+    width: 70px;
+    height: 50px;
+    text-align: center;
+}
+.head ul li a{
+    color: white;
+    text-decoration: none;
+}
+.subHead{
+    display: none;
+}
+.head ul li:hover{
+    background: green;
+    border-radius: 4px;
+}
+.head ul li:hover .subHead{
+    display: block;
+    position: absolute;
+    margin-top: 250px;
+    background:black;
+    width: 100px;
+}
+.head ul li:hover .subHead ul{
+    display: block;
+}
+.head ul li:hover .subHead ul li{
+    background: transparent;
+}
+.head ul li:hover .subHead ul li:hover{
+    color: green;
+}
+.subHead1{
+    display: none;
+}
+
+.hover-me:hover .subHead1{
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    margin-top: 170px;
+    background: black;
+}
+.hover-me:hover .subHead1 ul{
+    color: white;
+}
+
